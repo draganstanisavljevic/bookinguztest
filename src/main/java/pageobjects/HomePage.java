@@ -3,6 +3,7 @@ package pageobjects;
 import elements.TrainItem;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,6 +45,7 @@ public class HomePage {
         driver.findElement(submit).click();
     }
 
+    @Step("get trains")
     public ArrayList<TrainItem> getTrains() {
         ArrayList<TrainItem> trains = new ArrayList<>();
         WebDriverWait wait = new WebDriverWait(driver, 15);
