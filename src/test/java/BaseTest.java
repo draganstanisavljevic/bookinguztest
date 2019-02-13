@@ -11,7 +11,7 @@ import java.net.URL;
 
 public class BaseTest {
 
-    protected AppiumDriver<MobileElement> driver;
+    protected static AppiumDriver<MobileElement> driver;
 
     @BeforeSuite
     public void setEnvironment() throws MalformedURLException {
